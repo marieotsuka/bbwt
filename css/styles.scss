@@ -207,6 +207,17 @@ table{
 	background: black;
 	color: white;
 
+	h1, h2, h3, h4{
+		font-size: var(--size-medium);
+	}
+	
+	p{
+		width: 30em;
+	}
+	ul{
+		width: 30em;
+		text-align: left;
+	}
 	figure{
 		width: 100%;
 		

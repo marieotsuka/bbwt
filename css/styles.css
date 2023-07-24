@@ -199,6 +199,16 @@ table th, table td {
   background: black;
   color: white;
 }
+.slide h1, .slide h2, .slide h3, .slide h4 {
+  font-size: var(--size-medium);
+}
+.slide p {
+  width: 30em;
+}
+.slide ul {
+  width: 30em;
+  text-align: left;
+}
 .slide figure {
   width: 100%;
   padding: var(--pad);
