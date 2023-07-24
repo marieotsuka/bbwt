@@ -1,2 +1,2 @@
-# bbwt
-SVA Branding with Type
+# Building Brands with Type
+SVA Workshop Repo
