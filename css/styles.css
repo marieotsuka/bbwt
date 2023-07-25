@@ -82,6 +82,8 @@ header, footer, section {
 a {
   text-decoration: none;
   color: black;
+  padding-bottom: 2px;
+  border-bottom: 1px solid;
 }
 
 a.anchor {
@@ -199,7 +201,10 @@ table th, table td {
   background: black;
   color: white;
 }
-.slide h1, .slide h2, .slide h3, .slide h4 {
+.slide h1, .slide h3 {
+  font-size: var(--size-large);
+}
+.slide h2, .slide h4 {
   font-size: var(--size-medium);
 }
 .slide p {
@@ -230,6 +235,10 @@ table th, table td {
 .slide .source {
   font-size: var(--size-small);
   padding-left: 1em;
+  border: none;
+}
+.slide .lalign p {
+  text-align: left;
 }
 
 .pad {

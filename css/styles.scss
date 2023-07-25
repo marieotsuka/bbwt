@@ -87,6 +87,8 @@ header,footer,section{
 a{
 	text-decoration: none;
 	color: black;
+	padding-bottom: 2px;
+	border-bottom: 1px solid;
 }
 a.anchor{
 	display: block;
@@ -207,7 +209,10 @@ table{
 	background: black;
 	color: white;
 
-	h1, h2, h3, h4{
+	h1, h3{
+		font-size: var(--size-large);
+	}
+	h2, h4{
 		font-size: var(--size-medium);
 	}
 	
@@ -240,6 +245,11 @@ table{
 	.source{
 		font-size: var(--size-small);
 		padding-left: 1em;
+		border: none;
+	}
+
+	.lalign p{
+		text-align: left;
 	}
 }
 .pad{
