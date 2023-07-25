@@ -34,8 +34,6 @@ The term “uppercase” and “lowercase” come from where they were stored.
 
 Optical sizing was built-into metal type design.
 
-Optical sizing was built-into metal type design.
-
 The high-contrast and hairline serifs in Bodoni’s design was enabled by the quality of metal casting and the smoothness of paper.
 
 Instead of using metal type, photo typsetting projects a light through a film negative of a character, while a lens that magnifies or reduces the size of the character.
