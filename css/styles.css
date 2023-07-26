@@ -179,16 +179,22 @@ figcaption {
 
 table {
   margin: auto;
-  font-size: var(--size-medium);
+  font-size: var(--size-base);
   text-align: left;
   border-collapse: collapse;
 }
 table th {
   --wght: 500;
-  border-bottom: 3px solid;
+  border-bottom: 2px solid;
 }
 table th, table td {
   padding: 0.25em 0.5em;
+}
+table th:first-child, table td:first-child {
+  padding-left: 0;
+}
+table th:last-child, table td:last-child {
+  padding-right: 0;
 }
 
 .slide {
@@ -217,9 +223,13 @@ table th, table td {
 }
 .slide ul li {
   text-align: center;
+  line-height: 1.5;
 }
 .slide ul li:before {
   content: "";
+}
+.slide ul + h4 {
+  margin-top: var(--pad-section);
 }
 .slide figure {
   width: 100%;
@@ -250,6 +260,10 @@ table th, table td {
 
 .pad {
   background: white;
+}
+
+.text {
+  max-width: 40em;
 }
 
 figure.small img {

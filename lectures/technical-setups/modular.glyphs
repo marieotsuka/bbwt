@@ -2,9 +2,6 @@
 .appVersion = "3207";
 .formatVersion = 3;
 DisplayStrings = (
-"de bene ebbe don boo nee bon nn debbe nende dno edd dono bonen benn nonno ndene nde ode bb bn eoo bobo bob denen oe ned on doden bod nn odd denen bonden noe deb dd ebben ben debeo boon bond obed bone deene bnd nebenbe bde bo nen dened nn dod bonne doen beneden /bowl onnen bee o bedend be de non nede boded ndo de eden benn been dee end nebbed ddo bd  benn ende dn nen ben dedne en booboo benede on dd benne nno deden oen noe bed nb enn eend enn non boned een bne
-nnnnonono 
-nnnonooo ",
 "/bowl o
 nnn/lowstem n/lowstem nn/stem  b
 nononooo
@@ -27,7 +24,9 @@ opna ana ned depp dead nba beano nebenan bade pop peened nad benne ano bee pee b
 doo,
 "/lowstem/stem",
 "aáäbdeéënńoóöp/a.salt_simple/aacute.salt_simple/e.ss01/o.ss01/e.ss02 
-/stem  nnononoooo"
+/stem  nnononoooo",
+"aáäbdeéënńoóöp/a.salt_simple",
+"anno eden adeo ope poe ään penne dada ann dea ebb nede bono podobe bond oba dodded dno paeon pop babe dan daneben bedna non pappone dood podobá öde nada ono ááá nade onda banaan nedd dean nebo dead aanbod ando abandon paden pope deda panno boo pana pened poén oon dobd bone nonna anda pennen banen abandono banded née baba padá beddoe apode abandonen panden don nápad beaded dodo bade dena enään panna nebb nan poppa and nanna bonded abandonando annapa nappa annad epeo apann oppone dop pod donna nopea papa pána ede pan popp pabba pando pada pondo abed bende abadane popped deb adónde dona banana eoo enne deodand nona bob andado aan added boda papped panda enden beano badań noen bando edna páde pen odo dane annona doab noé dána pepe podobná podobne nenápadne abbé apen bene been oed ana add addo ebbene adda bande nape dáno dod bon ona pappaen padon papá adnabod openden ennen apa nep deena dob nennen pene dano nenapadá nana bonden nee napa dopped dopo oen pode bandanna dobod bondad papád neben dee nedá pédé nebbed bebe depone anne deponed deed one pap done bona babanod andá boende poppen nod doe baaed"
 );
 axes = (
 {
@@ -1912,6 +1911,10 @@ width = 390;
 }
 );
 instances = (
+{
+name = Regular;
+type = variable;
+},
 {
 axesValues = (
 400

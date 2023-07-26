@@ -188,15 +188,21 @@ figcaption{
 
 table{
   margin: auto;
-  font-size: var(--size-medium);
+  font-size: var(--size-base);
   text-align: left;
   border-collapse: collapse;
   th{
     --wght: 500;
-    border-bottom: 3px solid;
+    border-bottom: 2px solid;
   }
   th,td{
     padding: 0.25em .5em;
+    &:first-child{
+    	padding-left: 0;
+    }
+    &:last-child{
+    	padding-right: 0;
+    }
   }
 }
 .slide{
@@ -228,6 +234,10 @@ table{
 			&:before{
 				content: '';
 			}
+			line-height: 1.5;
+		}
+		&+h4{
+			margin-top: var(--pad-section);
 		}
 	}
 	figure{
@@ -261,6 +271,10 @@ table{
 }
 .pad{
 	background: white;
+}
+
+.text{
+	max-width: 40em;
 }
 
 figure.small img{
