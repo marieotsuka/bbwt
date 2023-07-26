@@ -209,10 +209,10 @@ table{
 	background: black;
 	color: white;
 
-	h1, h3{
+	h1{
 		font-size: var(--size-large);
 	}
-	h2, h4{
+	h2, h3, h4{
 		font-size: var(--size-medium);
 	}
 	
@@ -221,7 +221,14 @@ table{
 	}
 	ul{
 		width: 30em;
+		margin: auto;
 		text-align: left;
+		li{
+			text-align: center;
+			&:before{
+				content: '';
+			}
+		}
 	}
 	figure{
 		width: 100%;
@@ -254,6 +261,10 @@ table{
 }
 .pad{
 	background: white;
+}
+
+figure.small img{
+	height: 70vh;
 }
 
 

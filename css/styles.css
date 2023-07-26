@@ -201,10 +201,10 @@ table th, table td {
   background: black;
   color: white;
 }
-.slide h1, .slide h3 {
+.slide h1 {
   font-size: var(--size-large);
 }
-.slide h2, .slide h4 {
+.slide h2, .slide h3, .slide h4 {
   font-size: var(--size-medium);
 }
 .slide p {
@@ -212,7 +212,14 @@ table th, table td {
 }
 .slide ul {
   width: 30em;
+  margin: auto;
   text-align: left;
+}
+.slide ul li {
+  text-align: center;
+}
+.slide ul li:before {
+  content: "";
 }
 .slide figure {
   width: 100%;
@@ -243,6 +250,10 @@ table th, table td {
 
 .pad {
   background: white;
+}
+
+figure.small img {
+  height: 70vh;
 }
 
 .interpolation {
