@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tips and Tools</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+  </head>
+  <body>
+  <main>
+    <div class="slide divider">
+      <div class="text">
+        <h1>Tips and Tools</h1>
+        <h2>Considerations in your type design process</h2>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="text">
+        <h3>1. Print & Proof at Size</h3>
+        Don’t be shy with serifs<br>
+        Small details can get lost—make sure your design decisions feel intentional<br>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="text">
+        <h3>2. Draw letters in context</h3>
+       Evaluate them in spacing strings (make a shortcut) and<br>
+       paragraphs—word-o-mat it!
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="text">
+        <h3>3. Expand your Edit View</h3>
+      The default width of the edit view isn’t wide enough for seeing glyphs well in paragraphs. <br>
+      Go to your Glyphs settings / preferences > Appearance > Text View Width to 2400.
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="text">
+        <h3>4. Nail down your control characters</h3>
+        Refine your “phones RHODES” and their spacing first,<br> then proceed to other letters
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="text">
+        <h3>5. White shapes & black shapes</h3>
+        Pay close attention to shapes being formed by both the outside and interior outlines —<br>
+        consider how the letter contours are carving out spaces.
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="text"> 
+        <h3>6. Testing fonts</h3>
+        Don’t install fonts onto your computer—use the <a href="https://glyphsapp.com/learn/testing-your-fonts-in-adobe-apps" target="_blank">Adobe Fonts folder</a>, and make sure it’s at the root level instead of the user level<br>
+        ( <code>/Library/Application Support/Adobe/</code> )
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="text"> 
+        <h3>7. Consult Glyphs Forum</h3>
+        The <a href="https://forum.glyphsapp.com/" target="_blank">Glyphs Forum</a> has a wealth of information, and searching it is often helpful.<br> The creators are very engaged with responding to inquiries.
+      </div>
+    </div>
+
+    <div class="slide divider">
+      <h2>Keyboard shortcuts</h2>
+    </div>
+
+    <div class="slide">
+      <table>
+      <thead>
+      <tr>
+      <th>Description</th>
+      <th>Shortcut</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td>Send to background</td>
+      <td><code>⌘A (select all) + ⌘J</code></td>
+      </tr>
+      <tr>
+      <td>Toggle between background and foregraound</td>
+      <td><code>⌘B</code></td>
+      </tr>
+      <tr>
+      <td>Toggle between background and foregraound</td>
+      <td><code>⌘B</code></td>
+      </tr>
+      <tr>
+      <td>Move by 10 units</td>
+      <td><code>⇧ + arrow keys</code></td>
+      </tr>
+      <tr>
+      <td>Center glyphs</td>
+      <td><code>⇧ + ⌘ + E</code></td>
+      </tr>
+      <tr>
+      <td>Adjust sidebearings, left side (by ten units)</td>
+      <td><code>⌃  + arrow keys ( + ⇧ )</code></td>
+      </tr>
+      <tr>
+      <td>Adjust sidebearings, right side (by ten units)</td>
+      <td><code>⌘ + arrow keys ( + ⇧ )</code></td>
+      </tr>
+      <tr>
+      <td>Align selection</td>
+      <td><code>⇧ + ⌘ + A</code></td>
+      </tr>
+      <tr>
+      <td>Add Extremes points*</td>
+      <td><code>⌘ + click on path</code></td>
+      </tr>
+      <tr>
+      <td>Kern (by ten units)</td>
+      <td><code>⌥ + ⌘ + arrow keys ( + ⇧ )</code></td>
+      </tr>
+      <tr>
+      <td>Toggle measurement line</td>
+      <td><code>⌃ + ⌥ + ⌘ + drag</code></td>
+      </tr>
+      <tr>
+      <td>Correct Path direction (in all masters)</td>
+      <td><code>(⇧ + ) ⌥ + ⌘ + R</code></td>
+      </tr>
+      </tbody>
+      </table>
+    </div>
+
+    <div class="slide">
+      <div class="text lalign">
+        <p>
+          *Extreme points are on-curve nodes that lie at 90°. They help structure the curves cleanly. By default, Glyphs doesn’t support adding extremes only to a selected segment via keyboard, but you can do this via a script.
+        </p>
+        <p>
+          Generally speaking, keeping the shift pressed adjusts arrow-key increments to 10 units; shift + command adjusts them to 100 units.
+        </p>
+        <p>
+          The selected letter is the glyph on the right side of the cursor. You can adjust both the left and right side bearings of the glyph in this way, using those different keyboard shortcuts above.
+        </p>
+        <p>
+          <em>You may need to disable native Mac keyboard shortcuts for some</em>
+        </p>
+      </div>
+    </div>
+
+    <div class="slide divider">
+      <div class="text">
+        <h2>Plugins</h2>
+        <p>Installable through the Plugin manager</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <figure>
+        <img src="img/plugins.png">
+        <figcaption>Glyphs plugins, which most available through Plugin Manager<a href="https://glyphsapp.com/learn/multiple-masters-part-1-setting-up-masters" class="source">Source</a></figcaption>
+      </figure>
+    </div>
+
+    <div class="slide">
+      <div class="text">
+        <h3>Reporter plugins</h3>
+        <p>The Reporter plugin will help you manage your installed plugins in your right sidebar</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="text">
+        <h3>Word-o-mat!</h3>
+        <p>
+          If you run into trouble, check out <a href="https://forum.glyphsapp.com/t/can-t-open-word-o-mat-in-glyphs-3/25510">this post</a> on the forum.
+        </p>
+      </div>
+    </div>
+
+     <div class="slide divider">
+      <div class="text">
+        <h2>Scripts</h2>
+        <p>Installable by saving in Scripts folder / Plugin Manager<br>
+          ( Script > Open Scripts Folder in the menu)</p>
+      </div>
+    </div>
+
+    <div class="slide">
+      <figure>
+        <img src="img/scripts.png">
+        <figcaption> Mekkablue (
+Rainer Scheichelbauer, one of Glyph’s creators) <a href="https://github.com/mekkablue/Glyphs-Scripts" target="_blank">scripts</a></figcaption>
+      </figure>
+    </div>
+
+    <div class="slide">
+      <figure>
+        <img src="img/script-shortcuts.png">
+        <figcaption> You can assign shortcuts to scripts!</figcaption>
+      </figure>
+    </div>
+
+    <div class="slide">
+      <div class="text">
+        Download scripts:<br>        
+        <a href="select-scripts/Show Spacing String.py" download>Show Spacing String</a><br>
+        <a href="select-scripts/Add Extremes to Selection.py" download>Add Extremes to Selection</a>
+      </div>
+    </div>
+
+  </main>
+  <script src="../script.js"></script>
+  </body>
+</html>
