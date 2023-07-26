@@ -421,3 +421,10 @@ figure.small img{
     width: 100%;
   }
 }
+
+@media print {
+	body{
+		background: white;
+		color: black;
+	}
+}
