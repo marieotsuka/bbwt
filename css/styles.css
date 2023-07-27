@@ -270,6 +270,10 @@ figure.small img {
   height: 70vh;
 }
 
+figure.wide {
+  width: 80%;
+}
+
 .interpolation {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
