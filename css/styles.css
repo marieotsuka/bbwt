@@ -112,6 +112,9 @@ p + p, h3, h5 {
 
 li {
   list-style-type: none;
+  margin-bottom: 0.3em;
+  padding-left: 1em;
+  text-indent: -1em;
 }
 li:before {
   content: "—";
@@ -223,7 +226,6 @@ table th:last-child, table td:last-child {
 }
 .slide ul li {
   text-align: center;
-  line-height: 1.5;
 }
 .slide ul li:before {
   content: "";

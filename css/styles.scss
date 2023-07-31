@@ -115,6 +115,9 @@ h3,h5,.schedule-header{
 }
 li{
 	list-style-type: none;
+	margin-bottom: .3em;
+	padding-left: 1em;
+	text-indent: -1em;
 	&:before{
 		content: "—";
 	}
@@ -234,7 +237,6 @@ table{
 			&:before{
 				content: '';
 			}
-			line-height: 1.5;
 		}
 		&+h4{
 			margin-top: var(--pad-section);
