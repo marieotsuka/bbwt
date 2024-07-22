@@ -1,0 +1,254 @@
+
+.slides {
+  font-size: 16px;
+  font-family: 'Caper', sans-serif;
+  letter-spacing: 0.01em;
+  background: black;
+  color: white;
+  margin: 0;
+
+  code{
+    font-family: 'Courier New';
+  }
+  .pentameter{
+    font-family: 'Pentameter VF';
+    font-variation-settings: "wdth" var(--wdth), "wght" var(--wght), "slnt" var(--slnt);
+  }
+  .quiosco{
+    font-family: 'Quiosco';
+  }
+  .courier{
+    font-family: 'Courier';
+  }
+  .magmatic{
+    font-family: 'Magmatic VF';
+    font-variation-settings: "wdth" 100, "wght" var(--wght);
+  }
+
+  .fontdisplay{
+    font-size: 120px;
+    text-align: center;
+    margin: auto;
+  }
+
+  footer{
+    --wdth: 100;
+    --wght: 800;
+    font-size: var(--size-small);
+    letter-spacing: 0.03em;
+    position: absolute;
+    bottom: 0;
+    width: calc( 100% - 2 * var(--pad-content) );
+    display: flex;
+    color: var(--color-link);
+    border-top: 3px solid var(--color-link);
+    padding: var(--pad) 0 calc( var(--pad) + 10px );
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+
+    .runner-1{
+      flex: 1;
+    }
+    .runner-2{
+      flex: 1;
+      text-align: right;
+    }
+  }
+
+  .slide{
+    background: black;
+    color: white;
+    max-width: none;
+    position: relative;
+    padding: var(--pad) var(--pad-content) var(--pad-content);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    h1, h2, h3, blockquote, figure{
+      margin: auto;
+    }
+  }
+
+
+  .dark{
+    background: var(--color-dark);
+    color: var(--color-bg);
+  }
+
+
+  .text{
+    margin: auto;
+  }
+
+  h1, h2, h3, h4, h5, p{
+    font-weight: normal;
+    max-width: 32em;
+  }
+
+  blockquote{
+    max-width: 16em;
+  }
+
+  em{
+    font-style: normal;
+    --wght: 800;
+  }
+
+
+  h1{
+    font-size: var(--size-xlarge);
+    line-height: 1.0;
+    --wght: 550;
+  }
+  h2{
+    font-size: var(--size-large);
+    line-height: 1.0;
+    margin-bottom: var(--pad);
+    --wght: 200;
+  }
+  h3{
+    font-size: var(--size-medium);
+    line-height: 1.2;
+  }
+  h4{
+    font-size: var(--size-small);
+    --wdth: 100;
+    // font-family: "Allium Text";
+  }
+  h5{
+    font-size: var(--size-small);  
+    --wdth: 100; 
+    // font-family: "Allium Text";
+    line-height: 1.5;
+  }
+
+  p, li{
+    font-size: var(--size-base);
+    line-height: 1.4;
+    padding-bottom: var(--pad);
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  figcaption{
+    font-size: calc( var(--size-small) * 1.2);
+    line-height: 1.5;
+    font-variation-settings: 'wdth' 110, 'wght' 450, 'ital' 0;
+    letter-spacing: 0.03em;
+    margin-top: 1rem;
+    max-width: none;
+  }
+
+  figcaption.screen{
+    margin-top: -2rem;
+  }
+
+
+  blockquote{
+    width: 85%;
+    font-size: var(--size-medium);
+    --wght: 200;
+    line-height: 1.2;
+    text-indent: -0.5em;
+    &.quote-long{
+      font-size: var(--size-medium);
+    }
+  }
+
+
+  a{
+    color: var(--color-link);
+    text-decoration: none;
+    border-bottom: 0.05em solid var(--color-link);
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  ul{
+    padding-left: 0;
+    
+  }
+  li{
+    list-style-type: none;
+    padding-bottom: 0;
+    font-size: var(--size-medium);
+  }
+  .cols{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .col2{
+    grid-column: span 6;
+    li:before{
+      content: "";
+    }
+  }
+  .col3{
+    grid-column: span 4;
+  }
+
+
+  .whitebg{
+    background: white;
+    padding: var(--pad);
+  }
+
+  .numbered {
+    padding-left: 5rem;
+    li{
+      list-style-type: decimal;
+      font-size: var(--size-medium);
+    }
+  }
+  .grey{
+    background: rgb(220,220,220);
+  }
+  .ra{
+    background: rgb(20,20,20);
+    color: white;
+  }
+
+  figure{
+    width: 100%;
+  }
+  .source{
+    font-size: 0.8em;
+    margin-left: 1em;
+  }
+  img, video{
+   margin: auto;
+   display: block;
+   width: auto;
+   height: 80vh;
+  }
+
+  .wideimg{
+    width: 100%;
+    height: auto;
+  }
+  .middle{
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .pad{ 
+    padding: var(--pad);
+    background: white;
+  }
+
+  .slide.white{
+    background: white;
+    color: black;
+  }
+
+}
+@import 'diagrams';

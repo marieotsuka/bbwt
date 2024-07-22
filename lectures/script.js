@@ -64,3 +64,16 @@ let vidobserver = new IntersectionObserver((entries, observer) => {
 
 let videos = document.querySelectorAll('video');
 videos.forEach(function(el) { vidobserver.observe(el); });
+
+
+let controllers = document.querySelectorAll('.controller');
+
+controllers.forEach(controller=>{
+ switches = controller.querySelectorAll('.switch');
+ switches.forEach( el=>{
+   el.addEventListener('click', function(){
+     let mode = el.dataset.mode;
+     controller.parentElement.dataset.shapemode = mode;
+   });
+ });
+});
