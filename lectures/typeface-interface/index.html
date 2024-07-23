@@ -5,101 +5,256 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../../css/styles.css">
   </head>
-  <body>
+  <body class="slides">
   <main>
-    <div class="slide divider">
+    <section class="slide divider">
       <div class="text">
         <h1>Typeface as Interface</h1>
-        <h2>The possibilities of typographic expression with variable fonts</h2>
       </div>
-    </div>
+    </section>
 
-    <div class="slide divider">
+    <section class="slide divider">
+      <div class="text">
+        <h1>Part 1: Variable Fonts</h1>
+      </div>
+    </section>
+
+    <section class="slide">
+    <h2>OpenType 1.8</h2>
+    </section>
+    
+    <section class="slide">
+    <h2>Variable Fonts</h2>
+    </section>
+    
+    <section class="slide">
+      <div class="text">
+      <p>
+        A variable font is a single font file contains many different variations of a typeface, instead of having a separate font file for every width, weight, or style. This format was developed in collaboration by Adobe, Apple, Google, and Microsoft.
+      </p>
+      </div>
+    </section>
+    
+    <section class="slide">
+      <figure>
+        <img src="img/woff2s.png">
+        <figcaption>The full family of Magmatic requires 30 files</figcaption>
+      </figure>
+    </section>
+
+    <section class="slide">
+      <figure>
+        <img src="img/woff2size.png">
+        <figcaption>Which would require 30 HTTP requests, and a data load of 2.1MB to be downloaded</figcaption>
+      </figure>
+    </section>
+
+    <section class="slide">
+      <figure>
+        <img src="img/vfsize.png">
+        <figcaption>As a variable font, it is a single file request of 478KB (88% lighter)</figcaption>
+      </figure>
+    </section>
+
+    <section class="slide">
+      <h2>Digital letterforms are made of mathematical<br> equations, as functions of time</h2>
+    </section>
+
+    <section class="slide">
+      <figure>
+        <img src="img/interpolation.svg" width="600" alt="Masters and Instances">
+        <figcaption>Masters vs. Instances <a href="https://glyphsapp.com/learn/multiple-masters-part-1-setting-up-masters" class="source">Source</a></figcaption>
+      </figure>
+    </section>
+
+    <section class="slide">
+      <figure class="full">
+        <img src="img/magmatic-interpolation.png" class="wide-img">
+        <figcaption>Master Compatibility view of outlines</figcaption>
+      </figure>
+    </section>
+
+    <section class="slide">
+      <figure class="interpolation">
+          <div class="magmatic interp" style="--wdth: 50; --wght: 100">H</div>
+          <div class="arrow"><span class="leftarrow"> </span></div>
+          <div class="magmatic interp" style="--wdth: 100; --wght: 400"></div>
+          <div class="arrow"><span class="rightarrow"> </span></div>
+          <div class="magmatic interp" style="--wdth: 150; --wght: 900">H</div>
+      </figure>
+    </section>
+
+    <section class="slide">
+      <figure class="interpolation">
+          <div class="magmatic interp" style="--wdth: 50; --wght: 100">H</div>
+          <div class="arrow"><span class="leftarrow animate arrowanimate">→</span></div>
+          <div class="magmatic interp" style="--wdth: 100; --wght: 400">H</div>
+          <div class="arrow"><span class="rightarrow animate arrowanimate">←</span></div>
+          <div class="magmatic interp" style="--wdth: 150; --wght: 900">H</div>
+        </figure>
+    </section>
+
+    <section class="slide">
+      <h1 class="magmatic maganimate animate" style="font-size: 300px;">H</h1>
+    </section>
+
+    <section class="slide">
+      <h1 class="magmatic mag-wdth-animate animate" style="font-size: 300px;">H</h1>
+    </section>
+
+      <section class="slide">
+        <figure>
+          <img src="img/magmatic-vfviz.png" alt="Design Space visualizer">
+          <figcaption>Design space visualizer (Occupant Fonts)</figcaption>
+        </figure>
+      </section>
+     
+      <section class="slide">
+        <figure>
+          <img src="img/magmatic-vfviz2.png" alt="Design Space visualizer">
+          <figcaption>Instance positions within the design space</figcaption>
+        </figure>
+      </section>
+
+    <section class="slide">
+      <figure>
+      <video src="img/magmatic-samsa.mp4" muted autoplay loop></video>
+      <figcaption>Laurence Penney’s Samsa, Variable Font Inspector</figcaption>
+      </figure>
+    </section>
+
+    <section class="slide">
+      <figure>
+        <table>
+        <thead>
+        <tr>
+        <th>Axis Tag</th>
+        <th>Description</th>
+        <th>Valid Range</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>wght</td>
+        <td>weight</td>
+        <td>1—1000</td>
+        </tr>
+        <tr>
+        <td>wdth</td>
+        <td>width</td>
+        <td>>0, percent of normal width</td>
+        </tr>
+        <tr>
+        <td>opsz</td>
+        <td>optical sizing</td>
+        <td>>0, point sizes</td>
+        </tr>
+        <tr>
+        <td><em>ital</em></td>
+        <td><em>italicization</em></td>
+        <td><em>0—1</em></td>
+        </tr>
+        <tr>
+        <td><em>slnt</em></td>
+        <td><em>slant</em></td>
+        <td><em>-90—90</em></td>
+        </tr>
+        </tbody>
+        </table>
+        <figcaption>Standard Axes for Open Type 1.8</figcaption>
+      </figure>
+    </section>
+
+    <section class="slide divider">
+      <h2>Part 2: Axes of Variation</h2>
+    </section>
+
+    <section class="slide divider">
       <h1>Typographic Flexibility</h1>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <img src="img/occ-nav.png">
         <figcaption>Device flexibility, navigation menu for Occupant Fonts <a href="https://occupantfonts.com/" target="_blank" class="source">Site</a></figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/textlab_sr.mp4" muted autoplay loop></video>
         <figcaption>A customizable e-reader with variable weight axis <a href="https://textlab.occupantfonts.com/" target="_blank" class="source">Site</a></figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/animals_sr.mp4" muted autoplay loop></video>
         <figcaption>Harmonizing with other scripts and fonts</figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <img src="img/panera_uses.png">
         <figcaption>Sample uses of Start Script for Panera, by Victoria Rushton</figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure class="wide">
         <img class="pad" src="img/panera_underline.gif">
         <figcaption>A variable “underline” glyph for pairing, with 2 stylistic alternates</figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure class="wide">
          <video src="img/fresh.mp4" muted autoplay loop></video>
         <figcaption>An optical size axis for various media</figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/recursive_sr.mp4" muted autoplay loop></video>
         <figcaption>Refined microinteractions, microsite for Stephen Nixon’s Recursive <a href="https://www.recursive.design/" target="_blank" class="source">Site</a> </figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/flex.mp4" muted autoplay loop></video>
         <figcaption>Grades and optical sizing <a href="https://fonts.google.com/specimen/Roboto+Flex" target="_blank" class="source">Site</a> </figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/chee-variable.mp4" muted autoplay loop></video>
         <figcaption>Custom axes for Chee Variable by Ohno Type, James Edmonson <a href="https://v-fonts.com/fonts/cheee-variable" target="_blank" class="source">Source</a></figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/risd.mp4" muted autoplay loop></video>
         <figcaption>Custom stencil font for Rhode Island School of Design, by Ryan Bugden <a href="https://identity.risd.edu/how-we-look" target="_blank" class="source">Source</a></figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/sfsymphony.webm" muted autoplay loop></video>
         <figcaption>SF Symphony Branding, by COLLINS<a href="https://www.wearecollins.com/work/sf-symphony/" target="_blank" class="source">Source</a></figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide divider">
+    <section class="slide divider">
       <h1>A Live Interface</h1>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <div class="text">
         <p>Variable font formats provide not necessarily a new way to select a font style—a slider replacing a dropdown menu.
         </p>
@@ -107,9 +262,9 @@
           Rather, it is the ability to <em>programmatically</em> specify a precise point in a font’s design space.
         </p>
       </div>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <div class="text">
         <h2>
         <ul>
@@ -121,124 +276,124 @@
         </ul>
         </h2>
       </div>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <h2>Data as input material—variation as response</h2>
-    </div>
+    </section>
       
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/beowolf.mp4" muted autoplay loop></video>
         <figcaption>FF Beowulf by Letterror (Just van Rossum and Erik van Blokland,) 1990 <a href="https://letterror.com/fonts/beowolf.html" target="_blank" class="source">Source</a></figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <img src="img/twincities.jpg">
         <figcaption>Announcement for a panel on the typeface Twin, Designed By Letterror, 2002</figcaption>
       </figure>
-    </div>
+    </section>
 
 
-    <div class="slide">
+    <section class="slide">
       <h2>Variation as a function of <em>any input</em></h2>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/typephase.mp4" muted autoplay loop></video>
         <figcaption>Type Phase, by Elias Hanzer <a href="https://www.eliashanzer.com/phase/" target="_blank" class="source">Site</a></figcaption>
       </figure>
-    </div>
+    </section>
 
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <img src="img/goertek.gif">
         <figcaption>Goertek, a custom font for a sound company, Kontrapunkt <a href="https://www-kontrapunkt-com.netlify.app/work/goertek" target="_blank" class="source">Source</a></figcaption>
       </figure>
-    </div>
+    </section>
 
     
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/kachi-buwa.mp4" controls autoplay loop></video>
         <figcaption>Kachi Buwa Variable Font, by Emi Takahashi <a href="https://www.kachibuwa.com/" target="_blank" class="source">Site</a></figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <img src="img/wind-variable-demo-edited.gif">
         <figcaption>Wind Variable by Hansje van Halem <a href="https://www.typotheque.com/fonts/wind" target="_blank" class="source">Source</a></figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <img src="img/climate.png">
         <figcaption>Climate Crisis Font, by Helsingin Sanomat <a href="https://kampanjat.hs.fi/climatefont/" target="_blank" class="source">Site</a></figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/ra.mp4" muted autoplay loop></video>
         <figcaption>Radio Amnion, for Jol Thoms, with Minkyoung Kim <a href="https://radioamnion.net/" target="_blank" class="source">Site</a></figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/moonvf.mp4" muted autoplay loop></video>
         <figcaption>A moonphase variable font</figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/pentad_sr.mp4" muted autoplay loop></video>
         <figcaption>Seasons in Pentameter by Laurel Schwulst <a href="https://pentad.world/" target="_blank" class="source">Site</a></figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <img src="img/seasons-all.png">
         <figcaption>Font-weight mapped to the 72 microseasons of Japan</figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/trekker_sr.mp4" muted autoplay loop></video>
         <figcaption>Trekker/Browser by Tiger Dingsun <a href="https://pentad.world/" target="_blank" class="source">Site</a></figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/webtype.mp4" muted autoplay loop></video>
         <figcaption>Student Work from the class Web Type <a href="https://vf.webtype.xyz/" target="_blank" class="source">Site</a></figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure>
         <video src="img/choreo_sr.mp4" muted autoplay loop></video>
         <figcaption>Choreo by Dan Luo <a href="https://dluo01.github.io/danluo-web-type/variable-font/index.html" target="_blank" class="source">Site</a></figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <div class="text">
         <h2>Variation as an active human interface</h2>
         <a href="https://variable.occupantfonts.com/">Occupant Fonts Variable Font Guide</a>
       </div>
-    </div>
+    </section>
 
   </main>
   <script src="../script.js"></script>

@@ -490,6 +490,13 @@ footer .colophon {
   margin-top: 1rem;
 }
 
+.interpolation {
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
 .interpolation .arrow {
   display: flex;
   align-items: center;
@@ -498,8 +505,11 @@ footer .colophon {
 }
 
 .interp {
+  display: flex;
+  align-items: center;
+  text-align: center;
   font-size: 200px;
-  grid-column: span 2;
+  grid-column-end: span 2;
 }
 
 .animate {
