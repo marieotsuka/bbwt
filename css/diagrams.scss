@@ -86,7 +86,7 @@
     margin-top: 1rem;
   }
   code{
-    font-size: var(--size-default);
+    font-size: var(--size-base);
     --wght: 600;
   }
   figcaption{
@@ -300,7 +300,8 @@
 
 table{
   margin: auto;
-  font-size: var(--size-medium);
+  font-size: var(--size-base);
+  letter-spacing: 0.03em;
   text-align: left;
   border-collapse: collapse;
   th{

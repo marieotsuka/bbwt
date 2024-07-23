@@ -308,7 +308,7 @@ footer .colophon {
   font-size: var(--size-base);
   line-height: 1.4;
   padding-bottom: var(--pad);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   text-align: left;
 }
 .slides figcaption {
@@ -483,7 +483,7 @@ footer .colophon {
   margin-top: 1rem;
 }
 .definition code {
-  font-size: var(--size-default);
+  font-size: var(--size-base);
   --wght: 600;
 }
 .definition figcaption {
@@ -673,7 +673,8 @@ footer .colophon {
 }
 table {
   margin: auto;
-  font-size: var(--size-medium);
+  font-size: var(--size-base);
+  letter-spacing: 0.03em;
   text-align: left;
   border-collapse: collapse;
 }
