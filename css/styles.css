@@ -342,11 +342,21 @@ footer .colophon {
 }
 .slides ul {
   padding-left: 0;
+  margin: auto;
+}
+.slides figcaption li {
+  text-align: center;
+}
+.slides .list-long {
+  columns: 2;
 }
 .slides li {
   list-style-type: none;
   padding-bottom: 0;
   font-size: var(--size-medium);
+}
+.slides li:before {
+  content: "";
 }
 .slides .cols {
   width: 100%;

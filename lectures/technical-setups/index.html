@@ -5,51 +5,42 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../../css/styles.css">
   </head>
-  <body>
+  <body class="slides">
   <main>
-    <div class="slide divider">
+    <section class="slide divider">
       <div class="text">
         <h1>Technical Setups</h1>
         <h2>Components, Features, and Variable Font settings</h2>
       </div>
-    </div>
+    </section>
 
-    <div class="slide divider">
+    <section class="slide divider">
        <h1>Components</h1>
-    </div>
+    </section>
 
-    <div class="slide divider">
+    <section class="slide">
+      <div class="text">
+        <ul>
+          <li>1. Set up the needed diacritic mark as a glyph with the name + “comb“</li>
+          <li>2. Setup anchors on your base glyphs (⌘U)</li>
+          <li>3. Create composite glyphs (^⌘C)</li>
+          <li>4. Adjust anchors on base glyphs as needed</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide divider">
       <h2>
         Setting up <a href="https://glyphsapp.com/learn/diacritics" target="_blank">Diacritic Marks</a>
       </h2>
-    </div>
+    </section>
 
-    <div class="slide divider">
-       <h2>Creating a modular typeface</h2>
-    </div>
-
-    <div class="slide divider">
-     <ul>
-     <li><a target="_blank" href="https://www.google.com/search?q=jurriaan+schrofer&amp;espv=2&amp;biw=1498&amp;bih=1065&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjmq67SlsLPAhWBOpQKHQG_CWwQ_AUIBigB&amp;dpr=0.9">Jurriaan Schrofer</a></li>
-     <li><a target="_blank" href="http://diagonalpress.com/collections">Tauba Auerbach: Type Specimens</a></li>
-     <li><a target="_blank" href="https://apeloig.com/type/typographie/">Philippe Apeloig</a></li>
-     <li><a target="_blank" href="https://radimpesko.com/fonts/sol">Radim Pesko: Sol</a></li>
-     <li><a target="_blank" href="https://walkerart.org/minnesotabydesign/objects/walker">Matthew Carter: Walker</a> and some <a target="_blank" href="https://walkerart.org/magazine/matthew-carter">notes</a>.</li>
-     <li><a target="_blank" href="https://www.emigre.com/Fonts/Modula">Zuzana Licko: Modula</a></li>
-     <li><a target="_blank" href="https://www.typotheque.com/blog/calcula_a_geometrical_layering_display_typeface_with_thousands_of_ligatures">Shiva Nallaperumal: Calcula</a></li>
-     <li><a target="_blank" href="https://www.alphabettes.org/marina-loves-the-kaba-ornament/">Bram de Does: The Kaba Ornament</a></li>
-     <li><a target="_blank" href="http://nontsikelelomutiti.com/2017/03/04/the-digital-in-black-hair-aesthetics/">Nontsikelelo Mutiti: Thread</a></li>
-     <li><a target="_blank" href="https://eyeondesign.aiga.org/peter-bilaks-playful-buildable-type-system-q-is-the-lego-of-typefaces/">Peter Bilak: Q</a></li>
-     <li><a target="_blank" href="https://bitcount.typenetwork.com/">Peter van Blockland: Bitcount</a></li>
-     </ul>
-    </div>
-
-    <div class="slide divider">
+    <section class="slide divider">
        <h1>Open Type Features</h1>
-    </div>
+    </section>
 
-    <div class="slide divider">
-       <ul>
+    <section class="slide divider">
+       <ul class="list-long">
         <li>Ligatures</li>
         <li>Discretionary Ligatures</li>
         <li>Stylistic Alternates</li>
@@ -66,75 +57,103 @@
         <li>Superscript / Subscripts</li>
         <li>Localized Forms</li>
        </ul>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <div class="text">
-      <a href="https://typofonderie.com/help/opentype-features" target="_blank">An overview of features</a><br>
-      <a href="https://www.colophon-foundry.org/articles-guides/how-to-use-opentype-features" target="_blank">How to use Open Type features</a>
+        <ul>
+          <li><a href="https://typofonderie.com/help/opentype-features" target="_blank">An overview of features</a></li>
+          <li><a href="https://www.colophon-foundry.org/articles-guides/how-to-use-opentype-features" target="_blank">How to use Open Type features</a></li>
+        </ul>
       </div>
-    </div>
+    </section>
 
-    <!-- <div class="slide" data-feature>
+    <section class="slide">
+      <div class="text">
+        <ul>
+          <li>1. Name your alternate with a “.ss01”</li>
+          <li>2. Go to your Font Information > Features</li>
+          <li>3. Click on the plus button, and select Stylistic Set 1</li>
+          <li>4. Select the checkbox “Generate feature automatically”</li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="slide">
+      <figure>
+          <img class="wideimg pad" src="img/chicken_alternates.gif"><br>
+          <img class="wideimg pad" src="img/chicken_dollar_feature.gif">
+          <figcaption>
+             Features for Chicken Script, a custom typeface for Popeyes
+          </figcaption>
+      </figure>
+    </section>
+
+    <!-- <section class="slide" data-feature>
       <div class="text">
        <h2>Stylistic Alternates</h2>
        <button class="feature-toggler"><span class="on">on</span> <span class="off">off</span></button>
       </div>
     </div>
 
-    <div class="slide" data-feature>
+    <section class="slide" data-feature>
       <div class="text">
        <h2>Contextual Alternates</h2>
        <button class="feature-toggler"><span class="on">on</span> <span class="off">off</span></button>
       </div>
     </div>
 
-    <div class="slide" data-feature>
+    <section class="slide" data-feature>
       <div class="text">
        <h2>Localized Forms</h2>
        <button class="feature-toggler"><span class="on">on</span> <span class="off">off</span></button>
       </div>
     </div> -->
 
-    <div class="slide">
+    <section class="slide">
       <figure>
           <img src="img/featurecode.png">
           <figcaption>
              Learn the syntax of features at <a target="_blank" href="https://opentypecookbook.com/">opentypecookbook.com</a></h2>
           </figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide divider">
+    <section class="slide divider">
        <h1>Variable Fonts</h1>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <div class="text">
-        <h4>Tutorials and Guides</h4>
+        <h2>Tutorials and Guides</h2>
        <ul>
         <li>Glyphs App: Setting up your <a href="https://glyphsapp.com/learn/creating-a-variable-font" target="_blank">variable font</a></li>
         <li>An extensive <a href="https://v-fonts.com/" target="_blank">collection of variable fonts</a> by Nick Shermann</li>
         <li>A <a href="https://variablefonts.io/" target="_blank">primer on variable fonts</a> by Google</li>
       </ul>
+      </div>
+    </section>
 
-      <h4>Testing Variable Fonts</h4>
+    <section class="slide">
+      <div class="text">
+      <h2>Testing Variable Fonts</h2>
       <ul>
         <li>VF testing, desktop: <a href="https://github.com/justvanrossum/fontgoggles/releases/tag/v1.1">Font Goggles</a></li>
         <li>VF inspector, online: <a href="https://www.axis-praxis.org/samsa/">Samsa</a></li>
         <li>VF testing & animation: <a href="https://dinamodarkroom.com/gauntlet/">Dinamo Gauntlet</a></li>
       </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <div class="text">
       <h1>Interpolation</h1>
-      Glyphs App: <a href="https://glyphsapp.com/learn/multiple-masters-part-2-keeping-your-outlines-compatible" target="_blank">Keeping Compatible Outlines</a>
+      <p>Glyphs App: <a href="https://glyphsapp.com/learn/multiple-masters-part-2-keeping-your-outlines-compatible" target="_blank">Keeping Compatible Outlines</a></p>
       </div>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure class="small">
         <img src="img/compatibility.png">
         <figcaption>
@@ -144,11 +163,11 @@
           <li>✓ Off-curve points</li>
           <li>✓ Anchors</li>
           <li>Plugin: Master Compatibility</li>
-        </ul>
-      </figure>
-    </div>
+        </ul></figcaption>
+      </figure>    
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure class="small">
         <img src="img/path-direction.png">
         <figcaption>
@@ -159,19 +178,46 @@
           <li>Keyboard shortcut: Shift + Command + Option + R</li>
         </ul></figcaption>
       </figure>
-    </div>
+    </section>
 
-    <div class="slide">
+    <section class="slide">
       <figure class="small">
         <img src="img/shape-order.png">
-         <h3>Shape Order</h3>
-        <figcaption>Filter > Shape Order</figcaption>
-      </figure>
-    </div>
+        <figcaption>
+          <h3>Shape Order</h3>
 
-    <div class="slide">
-      <a href="modular.zip" download>Download Demo file</a>
-    </div>
+          <ul>
+            <li>Filter > Shape Order</li>
+          </ul>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="slide divider">
+       <h2>Demo: creating a modular typeface</h2>
+    </section>
+
+    <section class="slide divider">
+     <ul class="list-long">
+     <li><a target="_blank" href="https://www.google.com/search?q=jurriaan+schrofer&amp;espv=2&amp;biw=1498&amp;bih=1065&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjmq67SlsLPAhWBOpQKHQG_CWwQ_AUIBigB&amp;dpr=0.9">Jurriaan Schrofer</a></li>
+     <li><a target="_blank" href="http://diagonalpress.com/collections">Tauba Auerbach: Type Specimens</a></li>
+     <li><a target="_blank" href="https://apeloig.com/type/typographie/">Philippe Apeloig</a></li>
+     <li><a target="_blank" href="https://radimpesko.com/fonts/sol">Radim Pesko: Sol</a></li>
+     <li><a target="_blank" href="https://walkerart.org/minnesotabydesign/objects/walker">Matthew Carter: Walker</a> and some <a target="_blank" href="https://walkerart.org/magazine/matthew-carter">notes</a>.</li>
+     <li><a target="_blank" href="https://www.emigre.com/Fonts/Modula">Zuzana Licko: Modula</a></li>
+     <li><a target="_blank" href="https://www.typotheque.com/blog/calcula_a_geometrical_layering_display_typeface_with_thousands_of_ligatures">Shiva Nallaperumal: Calcula</a></li>
+     <li><a target="_blank" href="https://www.alphabettes.org/marina-loves-the-kaba-ornament/">Bram de Does: The Kaba Ornament</a></li>
+     <li><a target="_blank" href="http://nontsikelelomutiti.com/2017/03/04/the-digital-in-black-hair-aesthetics/">Nontsikelelo Mutiti: Thread</a></li>
+     <li><a target="_blank" href="https://eyeondesign.aiga.org/peter-bilaks-playful-buildable-type-system-q-is-the-lego-of-typefaces/">Peter Bilak: Q</a></li>
+     <li><a target="_blank" href="https://bitcount.typenetwork.com/">Peter van Blockland: Bitcount</a></li>
+     </ul>
+    </section>
+
+    <section class="slide">
+      <div class="text">
+        <h2><a href="modular.zip" download>Download Demo file</a></h2>
+      </div>
+    </section>
   
   </main>
   <script src="../script.js"></script>

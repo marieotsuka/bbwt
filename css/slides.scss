@@ -171,12 +171,21 @@
 
   ul{
     padding-left: 0;
-    
+    margin: auto;
+  }
+  figcaption li{
+    text-align: center;
+  }
+  .list-long{
+    columns: 2;
   }
   li{
     list-style-type: none;
     padding-bottom: 0;
     font-size: var(--size-medium);
+    &:before{
+      content: "";
+    }
   }
   .cols{
     width: 100%;
