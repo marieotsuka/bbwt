@@ -80,14 +80,15 @@ h1{
   --wdth: 120;
   --wght: 200;
   font-size: var(--size-xlarge);
-  line-height: 0.8;
-  animation: expand 2s linear alternate infinite;
+  line-height: 1.0;
+  text-align: center;
+/*  animation: expand 2s linear alternate infinite;*/
 }
-/*
+
 h1:hover{
   animation: expand 2s linear alternate infinite;
 }
-*/
+
 h2{
   --wdth: 80;
   --wght: 400;
