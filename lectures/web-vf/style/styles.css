@@ -1,9 +1,9 @@
 /*setup the variable font*/
 
 @font-face {
-    font-family: 'Magmatic VF';
-    font-weight: 400 700;
-    font-stretch: 50% 150%;
+    font-family: 'Magmatic';
+/*    font-weight: 400 700;*/
+/*    font-stretch: 50% 150%;*/
     src: url(fonts/Magmatic-VF-Trial.woff2) format("woff2-variations");
 }
 
@@ -35,7 +35,9 @@
 /* MAIN STRUCTURES */
 
 body{
-  font-family: 'Magmatic VF';
+  font-family: 'Magmatic';
+/*  background: red;
+  color: yellow;*/
   background: var(--color-bg);
   color: var(--color-text);
 }
@@ -77,16 +79,17 @@ h1,h2,h3,h4,h5,h6{
 }
 
 h1{
-  --wdth: 120;
-  --wght: 200;
+/*  --wdth: 120;
+  --wght: 200;*/
   font-size: var(--size-xlarge);
   line-height: 1.0;
   text-align: center;
-/*  animation: expand 2s linear alternate infinite;*/
+  font-variation-settings: "wdth" 50, "wght" 700, "XHGT" 100;
+/*  animation: vfanimation 2s linear alternate infinite;*/
 }
 
 h1:hover{
-  animation: expand 2s linear alternate infinite;
+  animation: vfanimation 2s linear alternate infinite;
 }
 
 h2{
@@ -126,12 +129,25 @@ p{
 
 
 /* ANIMATIONS */
-
-@keyframes expand{
+@keyframes enlarge{
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(5);
+  }
+}
+@keyframes vfanimation{
   0%{
-    font-variation-settings: 'wdth' 150, 'wght' 900, 'XHGT' 1;
+    font-variation-settings: 'wdth' 150, 'wght' 100, 'XHGT' 1;
+    color: yellow;
+  }
+  50%{
+    font-variation-settings: 'wdth' 50, 'wght' 100, 'XHGT' 1;
+    color: green;
   }
   100%{
     font-variation-settings: 'wdth' 50, 'wght' 100, 'XHGT' 1;
+    color: blue;
   }
 }
